@@ -1,3 +1,5 @@
+""" Example of roundtrip communication between Python and JS using localStorage """
+
 import panel as pn
 import datetime
 import json
@@ -68,7 +70,7 @@ class PythonJSRoundtripExample(ReactComponent):
 
     def _handle_msg(self, msg):
         msg = json.loads(msg).get("save_str", None)
-        
+
         print("\n stored string is: ", msg, "\n\n")
 
 
